@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function Input({ name, label, type, moreStyle }) {
+export default function Input({ name, label, type, moreStyle, ...props }) {
   return (
     <p className="p-2 w-full text-[15px]">
       {type === "textarea" ? (
         <textarea
+          {...props}
           className={` text-[15px] focus:outline-none focus:border-none focus:ring-1 focus:ring-[var(--main-color)] border-none w-full p-2 bg-[rgba(245,245,245)] rounded-sm  ${moreStyle}`}
           required
           placeholder={label}
@@ -14,6 +15,7 @@ export default function Input({ name, label, type, moreStyle }) {
       ) : type === "file" ? (
         <div className="relative">
           <input
+            {...props}
             className="hidden focus:outline-none focus:border-none focus:ring-1 focus:ring-[var(--main-color)]"
             id={name}
             name={name}
@@ -29,6 +31,7 @@ export default function Input({ name, label, type, moreStyle }) {
         </div>
       ) : (
         <input
+          {...props}
           className={`focus:outline-none focus:border-none focus:ring-1 focus:ring-[var(--main-color)] ${
             type === "file" ? "" : "bg-[rgba(245,245,245)] "
           } w-full p-2 rounded-sm  ${moreStyle}`}

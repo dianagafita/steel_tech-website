@@ -25,7 +25,53 @@
     --foreground: #ededed;
   }
 } */
+:root {
+  --main-color: rgb(252, 186, 3);
+  --second-color: #2b2a27;
+}
 
+@font-face {
+  font-family: "one";
+  src: url("./fonts/Square\ 721\ Extended\ Bold.otf");
+}
+
+@font-face {
+  font-family: "two";
+  src: url("./fonts/Eurostile\ Extended\ Regular.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+/* Hide Google Translate elements */
+.goog-te-banner-frame.skiptranslate,
+.goog-tooltip,
+.goog-te-balloon-frame,
+.goog-te-combo,
+iframe[id^="goog-te"],
+.goog-te-gadget-icon,
+.goog-te-menu-frame,
+.goog-te-menu-value,
+.goog-logo-link,
+.goog-te-spinner-pos,
+.goog-te-gadget {
+  display: none !important;
+}
+
+/* Prevent text selection to avoid triggering Google Translate suggestions */
+body,
+* {
+  -webkit-tap-highlight-color: transparent !important;
+  user-select: none; /* Disable text selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Customize the appearance */
+font {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
 body {
   position: static;
   top: 0 !important;
@@ -70,7 +116,19 @@ iframe.skiptranslate {
     text-wrap: balance;
   }
 } */
+.skiptranslate,
+.goog-te-banner-frame,
+.goog-te-gadget-icon,
+.goog-te-menu-frame,
+.goog-te-menu-value,
+.goog-logo-link,
+.goog-te-spinner-pos {
+  display: none !important;
+}
 
+.goog-te-gadget {
+  display: none !important;
+}
 .text-top-shadow {
   text-shadow: 0px -1px 5px rgba(0, 0, 0, 0.9);
 }

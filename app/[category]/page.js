@@ -45,13 +45,17 @@ export default function CategoryPage({ params }) {
 
   return (
     <div className=" w-full  z-[20] min-h-[100vh] ">
-      <div className=" relative  h-full md:h-full">
+      <div className=" relative h-[100vw] md:h-[50vw] w-full">
         <Image
           src={img2}
+          priority
           alt="Background image"
-          layout="responsive"
+          fill
           style={{
-            objectFit: "contain",
+            objectFit: "cover",
+            WebkitMaskImage:
+              "linear-gradient(to left, black 90%, transparent 100%)",
+            maskImage: "linear-gradient(to right, black 80%, transparent 100%)",
           }}
         />
         <div className=" absolute top-10 left-0 w-full h-full flex flex-col justify-center items-start p-5">

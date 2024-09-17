@@ -2,7 +2,10 @@ import { MAIN_PAGE_PROP } from "@/constants";
 
 export default function QualitiesComponent() {
   return (
-    <ul className="md:justify-center py-10 bg-[#2B2A27] flex w-[100vw] overflow-x-auto px-5">
+    <ul
+      className=" bg-[#2B2A27] flex w-[100vw] overflow-auto border-none px-5 py-5"
+      style={{ WebkitOverflowScrolling: "touch", flexShrink: 0 }}
+    >
       {MAIN_PAGE_PROP.map((item) => (
         <li
           key={item.title}

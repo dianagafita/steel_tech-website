@@ -71,62 +71,58 @@
 //     </div>
 //   );
 // }
+"use client";
 import Image from "next/image";
 import React from "react";
 import { MdPhone } from "react-icons/md";
 import Input from "../util/input";
 import img2 from "@/app/4.png";
 import img3 from "@/app/7.png";
+import OfferForm from "../email/offer-form";
 
 export default function ClientsComponent() {
+  const initialFormData = {
+    requestOfferFullName: "",
+    requestOfferPhone: "",
+    requestOfferEmail: "",
+    requestOfferDetails: "",
+  };
+
+  const handleSubmit = async (formDataToSubmit) => {
+    const response = await fetch("/api/requestOffer", {
+      method: "POST",
+      body: formDataToSubmit,
+    });
+
+    if (!response.ok) {
+      throw new Error("Network response was not ok.");
+    }
+  };
+
   return (
     <div className="h-full w-full ">
       {/* Background Image */}
-      <div className="relative flex flex-col items-center inset-0 h-[70vh] md:h-[60vw] lg:h-[40vw]  w-full">
+      <div className="relative bg-white h-auto flex flex-col items-center inset-0 min-h-[80vh] md:h-[70vw] lg:h-[50vw]  w-full">
         <Image
           src={img2}
           alt="Background image"
           fill
           style={{ objectFit: "cover" }}
         />
-        <div className="absolute inset-0 flex flex-col justify-center items-start p-5 bg-gradient-to-b from-black/50 to-transparent">
+        <div className="absolute inset-0 flex flex-col pt-40 items-start p-5 bg-gradient-to-b from-black/50 to-transparent">
           <span className="text-white text-3xl font-bold">Clienti</span>
           <span className="text-white text-xl">clienti</span>
         </div>
-        <div className="absolute bottom-[-25rem] md:bottom-[-20rem] h-full w-full  flex  max-w-[90vw] md:max-w-[70vw] p-5 lg:p-10 mt-10 md:mt-0 mb-  max-h-[700px] md:max-h-[450px] bg-white shadow-lg text-[var(--second-color)] w-[90vw] md:w-[70vw]">
+        <div className="absolute bottom-[-25rem] md:bottom-[-20rem] h-auto w-full  flex  max-w-[90vw] md:max-w-[70vw] p-5 lg:p-10 mt-10 md:mt-0 mb-  max-h-[900px] md:max-h-[600px] bg-white shadow-lg text-[var(--second-color)] w-[90vw] md:w-[70vw]">
           <div className="flex flex-col h-full w-full md:w-2/3">
             <span className="px-2 my-2 fontBold">CERE OFERTA</span>
             <span className="px-2 pb-10 text-[13px]">
               Arata-ne ce iti doresti sa obtii si noi iti spunem daca se poate
             </span>
-            <form className="flex flex-col text-[15px]">
-              <div className="flex flex-col md:flex-row">
-                <Input name="name" label="Nume complet" />
-                <Input name="phone" label="Telefon" />
-              </div>
-              <div className="flex flex-col md:flex-row">
-                <Input name="email" label="Email" />
-                <Input name="description" type="textarea" label="Descriere" />
-              </div>
-              <div className="p-2 flex justify-between items-center w-full">
-                <label htmlFor="image">Imagine de referinta</label>
-                <div className="relative">
-                  <input
-                    className="hidden"
-                    id="image"
-                    name="image"
-                    type="file"
-                    required
-                  />
-                  <label
-                    htmlFor="image"
-                    className="text-center bg-[rgba(252,186,3)] hover:bg-[rgba(252,186,3,0.8)] text-white py-2 px-4 rounded-sm cursor-pointer inline-block"
-                  >
-                    Choose File
-                  </label>
-                </div>
-              </div>
-            </form>{" "}
+            <OfferForm
+              onSubmit={handleSubmit}
+              initialValues={initialFormData}
+            />
           </div>
           <div className="relative pl-5 hidden md:block w-1/3  h-2/3">
             <Image
@@ -141,7 +137,7 @@ export default function ClientsComponent() {
           </div>
         </div>
       </div>
-
+      <div className="min-h-[60vh]" />
       {/* Form Section */}
     </div>
   );

@@ -13,7 +13,7 @@ export const VideoPlayer = ({ videoId }) => {
     <YouTube
       videoId={videoId}
       opts={opts}
-      className="my-20 max-w-[800px] w-full"
+      className="my-20 p-5 max-w-[800px] w-full"
     />
   );
 };
