@@ -1,101 +1,72 @@
 import Image from "next/image";
+import img from "./1.png";
+import { FaFacebook } from "react-icons/fa6";
+import InfoComponent from "@/components/main-page/info-component";
+import QualitiesComponent from "@/components/main-page/qualities-component";
+import CategoriesComponent from "@/components/main-page/categories-component";
+import ClientsComponent from "@/components/main-page/clients-component";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="w-full  z-[20] min-h-[100vh]">
+      <div className=" relative h-[100vw] md:h-[50vw] w-full">
         <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src={img}
+          alt="Background image"
+          fill
+          style={{
+            objectFit: "cover",
+            WebkitMaskImage:
+              "linear-gradient(to left, black 90%, transparent 100%)",
+            maskImage: "linear-gradient(to right, black 80%, transparent 100%)",
+          }}
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="px-[10vw] absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start p-5">
+          <span
+            className="text-[var(--main-color)] text-3xl font-bold"
+            translate="no"
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            STEEL TECH INDUSTRY
+          </span>
+          <span className="text-white text-xl">YES, WE CAN</span>
+          <div className="w-full text-end mt-20 ">
+            <button className=" relative px-2 py-2.5 overflow-hidden font-medium text-white bg-[rgba(252,186,3)] rounded-sm shadow-inner group">
+              <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-white-300 group-hover:w-full ease"></span>
+              <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-white-300 group-hover:w-full ease"></span>
+              <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-white group-hover:h-full ease"></span>
+              <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-white group-hover:h-full ease"></span>
+              <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-white-300 opacity-0 group-hover:opacity-100"></span>
+              <span className="relative text-[14px] md:text-base font-semibold transition-colors duration-300 delay-200 group-hover:text-[rgba(252,186,3)] ease">
+                Button Text
+              </span>
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <InfoComponent />
+      <QualitiesComponent />
+      <CategoriesComponent />
+      <div className="border-t py-5 flex items-center justify-start md:justify-center space-x-5 text-[14px] w-[100vw] overflow-x-auto">
+        <span className="flex items-center mx-5">
+          <FaFacebook className="mr-2" />
+          Facebook
+        </span>
+        <span className="flex items-center mx-5">
+          <FaFacebook className="mr-2" />
+          Facebook
+        </span>
+        <span className="flex items-center mx-5">
+          <FaFacebook className="mr-2" />
+          Facebook
+        </span>
+        <span className="flex items-center mx-5">
+          <FaFacebook className="mr-2" />
+          Facebook
+        </span>
+      </div>
+
+      <ClientsComponent />
+      <div className="bg-white h-[450px]"></div>
     </div>
   );
 }
