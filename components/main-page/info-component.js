@@ -37,7 +37,7 @@ export default function InfoComponent() {
       </div>
       {/* Right Side Images */}
       <div className="xl:ml-20 flex p-5 relative md:w-1/2 justify-center md:justify-end items-center md:items-start ">
-        <div className="mx-2 md:mx-0 relative w-[400px] md:w-full h-[300px] md:h-[300px]">
+        <div className="mx-2 md:mx-0 relative w-[300px] md:w-full h-[300px] md:h-[300px]">
           <Image
             src={img}
             alt="Steel image 1"
