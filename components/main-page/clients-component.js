@@ -102,7 +102,7 @@ export default function ClientsComponent() {
   return (
     <div className="h-full w-full ">
       {/* Background Image */}
-      <div className="relative bg-white h-auto flex flex-col items-center inset-0 min-h-[80vh] md:h-[70vw] lg:h-[50vw]  w-full">
+      <div className="relative bg-white h-auto flex flex-col items-center inset-0 min-h-[800px]   w-full">
         <Image
           src={img2}
           alt="Background image"
@@ -113,7 +113,7 @@ export default function ClientsComponent() {
           <span className="text-white text-3xl font-bold">Clienti</span>
           <span className="text-white text-xl">clienti</span>
         </div>
-        <div className="absolute bottom-[-25rem] md:bottom-[-20rem] h-auto w-full  flex  max-w-[90vw] md:max-w-[70vw] p-5 lg:p-10 mt-10 md:mt-0 mb-  max-h-[900px] md:max-h-[600px] bg-white shadow-lg text-[var(--second-color)] w-[90vw] md:w-[70vw]">
+        <div className="absolute bottom-[-25rem] md:bottom-[-25rem] h-auto w-full  flex  max-w-[90vw] md:max-w-[70vw] p-5 lg:p-10 mt-10 md:mt-0 mb-  max-h-[900px] md:max-h-[900px] bg-white shadow-lg text-[var(--second-color)] w-[90vw] md:w-[70vw]">
           <div className="flex flex-col h-full w-full md:w-2/3">
             <span className="px-2 my-2 fontBold">CERE OFERTA</span>
             <span className="px-2 pb-10 text-[13px]">
@@ -137,7 +137,7 @@ export default function ClientsComponent() {
           </div>
         </div>
       </div>
-      <div className="min-h-[60vh]" />
+      <div className="min-h-[60vh] md:min-h-0" />
       {/* Form Section */}
     </div>
   );

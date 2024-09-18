@@ -201,7 +201,7 @@ export default function OfferPage() {
   };
 
   return (
-    <div className="h-full w-full flex mt-[8rem] mx-auto lg:max-w-[80vw] p-5 px-10 text-[var(--second-color)]">
+    <div className="min-h-[100vh] h-full w-full flex mt-[8rem] mx-auto lg:max-w-[80vw] p-5 px-10 text-[var(--second-color)]">
       <div className="flex flex-col h-full w-full md:w-2/3">
         <span className="px-2 my-2 fontBold">CERE OFERTA</span>
         <span className="px-2 pb-10 text-[13px]">

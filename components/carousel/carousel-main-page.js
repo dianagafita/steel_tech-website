@@ -103,7 +103,7 @@ export const CarouselMainPage = ({ slides }) => {
   };
 
   return (
-    <div className="relative flex w-full h-[60vh] my-20">
+    <div className="relative flex w-full  my-20">
       {/* Left Section - Text */}
       <div className="w-1/2 bg-[var(--main-color)]  flex items-center justify-center p-5">
         <div>

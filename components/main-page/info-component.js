@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function InfoComponent() {
   return (
-    <div className="bg-[#2B2A27]  xl:px-[10vw]  text-white w-full flex flex-col ">
+    <div className="bg-[#2B2A27]  text-white w-full flex flex-col ">
       {/* Left Side Text */}
       <div className="flex flex-col md:flex-row justify-between w-full">
         <div className="px-5 pt-5 flex flex-col h-full w-full md:w-1/2 mt-10">

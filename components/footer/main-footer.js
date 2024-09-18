@@ -38,10 +38,10 @@ export default function MainFooter({ prefLangCookie }) {
             >
               Informatii
             </Link>
-            <span className="text-[12px] flex items-center">
+            <Link href="/about" className="text-[12px] flex items-center">
               <FaArrowRightLong className="mr-2 text-[var(--main-color)]" />
               Despre noi
-            </span>
+            </Link>
             <span className="text-[12px] flex items-center">
               <FaArrowRightLong className="mr-2 text-[var(--main-color)]" />
               Despre noi
