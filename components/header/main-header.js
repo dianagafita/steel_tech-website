@@ -22,12 +22,12 @@ export default function MainHeader() {
     <>
       <div className="header fixed top-0 z-[50] w-full">
         <MiniHeader />
-        <div className="flex items-center px-5 justify-between bg-[rgba(0,0,0,0.9)] text-white w-full">
-          <div className="h-[3.5rem] w-full flex items-center">
+        <div className="flex items-center  justify-between bg-[rgba(0,0,0,0.9)] text-white w-full">
+          <div className="h-[3.5rem] w-full flex items-center justify-between">
             <Link href="/" className="w-[60px] relative self-center">
               <Image src={logo} alt="Site Logo" />
             </Link>
-            <ul className="hidden md:flex tracking-widest items-center justify-start h-full text-[16px]">
+            <ul className="hidden md:flex  items-center  h-full text-[14px]">
               {MAIN_MENU.map((item) => (
                 <li className="mx-3" key={item.title}>
                   <Link
@@ -44,15 +44,13 @@ export default function MainHeader() {
               ))}
             </ul>
           </div>
-          {/* Burger Menu Icon */}
           <IoMdMenu
             onClick={handleOpenMenu}
-            className="text-3xl cursor-pointer md:hidden"
+            className="text-3xl mx-4 cursor-pointer md:hidden"
           />
         </div>
       </div>
 
-      {/* Mobile Header */}
       <MobileHeader openMenu={setOpenMenu} isOpened={openMenu} />
     </>
   );

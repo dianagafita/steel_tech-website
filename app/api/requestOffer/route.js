@@ -1,41 +1,3 @@
-// import OfferEmailTemplate from "@/components/email/offer-email-template";
-// import { NextResponse } from "next/server";
-// import { Resend } from "resend";
-
-// const resend = new Resend(process.env.RESEND_API_KEY);
-
-// export async function POST(req) {
-//   try {
-//     const formData = await req.formData(); // Parse form data
-//     const offer = {
-//       fullName: formData.get("requestOfferFullName"),
-//       phone: formData.get("requestOfferPhone"),
-//       email: formData.get("requestOfferEmail"),
-//       details: formData.get("requestOfferDetails"),
-//       image: formData.get("requestOfferImage"), // Optional image handling
-//     };
-
-//     console.log("POST request received", offer);
-
-//     await resend.emails.send({
-//       from: "SteelTech <florariahellen@hellenproparty.ro>",
-//       to: ["gafita.diana12@gmail.com"],
-//       subject: "CERERE OFERTA",
-//       react: OfferEmailTemplate({ offer }), // Use your template with the offer data
-//     });
-
-//     return NextResponse.json(
-//       { message: "Email sent successfully!" },
-//       { status: 200 }
-//     );
-//   } catch (error) {
-//     console.error("Error:", error);
-//     return NextResponse.json(
-//       { message: "Failed to send email.", error },
-//       { status: 500 }
-//     );
-//   }
-// }
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
@@ -49,14 +11,22 @@ export async function POST(req) {
       phone: formData.get("requestOfferPhone"),
       email: formData.get("requestOfferEmail"),
       details: formData.get("requestOfferDetails"),
-      image: formData.get("requestOfferImage"),
+      file: formData.get("requestOfferFile"), // Handle file (image or DXF)
     };
 
     console.log("POST request received", offer);
 
-    let imageBuffer = null;
-    if (offer.image) {
-      imageBuffer = Buffer.from(await offer.image.arrayBuffer());
+    let fileBuffer = null;
+    let fileName = null;
+
+    if (offer.file) {
+      // Check if the file is an image or DXF
+      const fileType = offer.file.type;
+      const fileExtension = offer.file.name.split(".").pop();
+
+      // Determine file name and buffer
+      fileName = `reference-file.${fileExtension}`;
+      fileBuffer = Buffer.from(await offer.file.arrayBuffer());
     }
 
     await resend.emails.send({
@@ -68,15 +38,21 @@ export async function POST(req) {
              <p><strong>TELEFON:</strong> ${offer.phone}</p>
              <p><strong>EMAIL:</strong> ${offer.email}</p>
              <p><strong>DESCRIERE:</strong> ${offer.details}</p>
-             <h2>Imagine de referinta:</h2>
+             ${
+               offer.file
+                 ? `<h2>Fisier de referinta atașat: ${offer.file.name}</h2>`
+                 : ""
+             }
             `,
-      attachments: [
-        {
-          filename: offer.image ? "reference-image.png" : null,
-          content: imageBuffer,
-          cid: "image001",
-        },
-      ].filter(Boolean),
+      attachments: offer.file
+        ? [
+            {
+              filename: fileName, // Use the file's actual extension
+              content: fileBuffer,
+              cid: "file001",
+            },
+          ]
+        : [], // No attachment if no file
     });
 
     return NextResponse.json(

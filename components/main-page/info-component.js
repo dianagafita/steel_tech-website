@@ -7,7 +7,6 @@ import Link from "next/link";
 export default function InfoComponent() {
   return (
     <div className="bg-[#2B2A27]  text-white w-full flex flex-col ">
-      {/* Left Side Text */}
       <div className="flex flex-col md:flex-row justify-between w-full">
         <div className="px-5 pt-5 flex flex-col h-full w-full md:w-1/2 mt-10">
           <span className="text-[var(--main-color)] text-[12px]">
@@ -23,7 +22,7 @@ export default function InfoComponent() {
               project idea and we will make it happen!
               <Link
                 href="/request-offer"
-                className="flex justify-between my-5 text-[var(--main-color)] rounded-sm  text-[12px] py-1 "
+                className="flex justify-between my-5 text-[var(--main-color)] rounded-sm  text-[12px] py-1 hover:text-white active:text-white"
               >
                 DETALII
                 <FaArrowRightLong />

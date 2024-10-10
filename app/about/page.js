@@ -5,7 +5,6 @@ import img from "./3.png";
 export default function AboutPage() {
   return (
     <div className="w-full h-full mb-20">
-      {/* Hero Section */}
       <div className="relative h-[30vw] w-full text-black">
         <Image
           src={img}
@@ -16,8 +15,6 @@ export default function AboutPage() {
           }}
         />
       </div>
-
-      {/* About Section */}
       <h1 className="fontBold text-[18px] text-center my-10">DESPRE NOI</h1>
 
       <div className="max-w-[80vw] mx-auto p-5 text-[15px] leading-relaxed text-justify">

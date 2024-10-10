@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Input({ name, label, type, moreStyle, ...props }) {
   return (
-    <p className="p-2 w-full text-[15px]">
+    <p className="p-2 w-full text-[16px]">
       {type === "textarea" ? (
         <textarea
           {...props}
-          className={` text-[15px] focus:outline-none focus:border-none focus:ring-1 focus:ring-[var(--main-color)] border-none w-full p-2 bg-[rgba(245,245,245)] rounded-sm  ${moreStyle}`}
+          className={` text-[16px] focus:outline-none focus:border-none focus:ring-1 focus:ring-[var(--main-color)] border-none w-full p-2 bg-[rgba(245,245,245)] rounded-sm  ${moreStyle}`}
           required
           placeholder={label}
           name={name}
@@ -24,7 +24,7 @@ export default function Input({ name, label, type, moreStyle, ...props }) {
           />
           <label
             htmlFor={name}
-            className="focus:outline-none focus:border-none focus:ring-1 focus:ring-[var(--main-color)] bg-[rgba(252,186,3)] hover:bg-[rgba(252,186,3,0.8)] text-white py-2 px-4 rounded-sm cursor-pointer inline-block"
+            className="text-[16px] focus:outline-none focus:border-none focus:ring-1 focus:ring-[var(--main-color)] bg-[rgba(252,186,3)] hover:bg-[rgba(252,186,3,0.8)] text-white py-2 px-4 rounded-sm cursor-pointer inline-block"
           >
             Choose File
           </label>

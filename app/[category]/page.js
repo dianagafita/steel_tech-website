@@ -1,12 +1,13 @@
 "use client";
 import { redirect } from "next/navigation";
-import img from "./5.png";
+import img from "./steel.jpg";
 import img2 from "./3.png";
 import Image from "next/image";
 import { VideoPlayer } from "@/components/util/video-player";
 import { CarouselMainPage } from "@/components/carousel/carousel-main-page";
 import Products from "@/components/category-page/products";
 import { MAIN_PAGE_CATEOGORIES } from "@/constants";
+import HoverVideo, { Gifs } from "@/components/util/gifs";
 const validCategories = [
   "frezare-cnc",
   "sertizare-furtunuri-hidraulice",
@@ -53,9 +54,6 @@ export default function CategoryPage({ params }) {
           fill
           style={{
             objectFit: "cover",
-            WebkitMaskImage:
-              "linear-gradient(to left, black 90%, transparent 100%)",
-            maskImage: "linear-gradient(to right, black 80%, transparent 100%)",
           }}
         />
         <div className=" absolute top-10 left-0 w-full h-full flex flex-col justify-center items-start p-5">
@@ -72,9 +70,38 @@ export default function CategoryPage({ params }) {
         <span className="text-[13px]">Descriere </span>
       </div>
       <h1 className="fontBold text-center">CE UTILAJE FOLOSIM? </h1>
-
       <CarouselMainPage slides={slides} />
       <Products />
+
+      <div className="flex flex-wrap  w-[90vw] gap-5  items-center justify-center mx-auto my-10">
+        <div className="flex flex-col">
+          <h1 className="fontBold text-center"> PASUL 1 </h1>
+          <HoverVideo
+            videoSrc="https://res.cloudinary.com/defo6qykq/video/upload/v1727165005/steel_tech/IMG_2820_yksuzn.mov"
+            fallbackImage={img.src}
+            width="400px"
+            height="250px"
+          />{" "}
+        </div>
+        <div className="flex flex-col">
+          <h1 className="fontBold text-center"> PASUL 2 </h1>
+          <HoverVideo
+            videoSrc="https://res.cloudinary.com/defo6qykq/video/upload/v1727165005/steel_tech/IMG_2820_yksuzn.mov"
+            fallbackImage={img.src}
+            width="400px"
+            height="250px"
+          />{" "}
+        </div>{" "}
+        <div className="flex flex-col">
+          <h1 className="fontBold text-center"> PASUL 3 </h1>
+          <HoverVideo
+            videoSrc="https://res.cloudinary.com/defo6qykq/video/upload/v1727165005/steel_tech/IMG_2820_yksuzn.mov"
+            fallbackImage={img.src}
+            width="400px"
+            height="250px"
+          />{" "}
+        </div>
+      </div>
       <div className="flex flex-col w-full items-center">
         <h1 className="fontBold text-center">CUM FUNCTIONEAZA? </h1>
         <VideoPlayer videoId="E5w--KIy-nQ" />

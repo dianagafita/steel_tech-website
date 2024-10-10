@@ -16,17 +16,23 @@ export default function Home() {
           fill
           style={{
             objectFit: "cover",
-            WebkitMaskImage:
-              "linear-gradient(to left, black 90%, transparent 100%)",
-            maskImage: "linear-gradient(to right, black 80%, transparent 100%)",
+            //   WebkitMaskImage:
+            //     "linear-gradient(to left, black 90%, transparent 100%)",
+            //   maskImage: "linear-gradient(to right, black 80%, transparent 100%)",
+            //
           }}
         />
         <div className=" absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start p-5">
-          <span className="text-[var(--main-color)] text-3xl font-bold">
+          <span
+            translate="no"
+            className="text-[var(--main-color)] text-3xl font-bold"
+          >
             STEEL TECH INDUSTRY
           </span>
-          <span className="text-white text-xl">YES, WE CAN</span>
-          <div className="w-full text-end mt-20">
+          <span translate="no" className="text-white text-xl">
+            YES, WE CAN
+          </span>
+          {/* <div className="w-full text-end mt-20">
             <button className=" relative px-2 py-2.5 overflow-hidden font-medium text-white bg-[rgba(252,186,3)] rounded-sm shadow-inner group">
               <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-white-300 group-hover:w-full ease"></span>
               <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-white-300 group-hover:w-full ease"></span>
@@ -37,7 +43,7 @@ export default function Home() {
                 Button Text
               </span>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       <InfoComponent />

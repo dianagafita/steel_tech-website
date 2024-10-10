@@ -1,20 +1,23 @@
 import { AiOutlineSolution } from "react-icons/ai";
 import { RiUserSettingsLine } from "react-icons/ri";
 import { IoSettingsOutline } from "react-icons/io5";
-import { BiLike } from "react-icons/bi";
 
 export const MAIN_MENU = [
   {
-    path: "/one",
-    title: "Item2",
+    path: "/sertizare-furtunuri-hidraulice",
+    title: "Sertizare",
   },
   {
-    path: "/",
-    title: "Item3",
+    path: "/frezare-cnc",
+    title: "Frezare CNC",
   },
   {
-    path: "/",
-    title: "Item1",
+    path: "/debitare-jet-plasma",
+    title: "Debitare plasma",
+  },
+  {
+    path: "/debitare-fascicul-laser",
+    title: "Debitare laser",
   },
 ];
 
@@ -58,7 +61,7 @@ export const MAIN_PAGE_CATEOGORIES = [
     icon: <IoSettingsOutline size={30} />,
   },
   {
-    path: "/debitare-fscicul-laser",
+    path: "/debitare-fascicul-laser",
     title: "Debitare prin fascicul LASER ",
     description:
       "Proces de taiere termica a materialelor conductive, în special metale, utilizând un jet de plasma fierbinte.",

@@ -41,9 +41,9 @@ export default function CategoriesComponent() {
                   size={20}
                   className={` ${
                     index !== 0
-                      ? " hover:bg-[var(--main-color)] hover:text-[var(--second-color)] text-[var(--main-color)]"
-                      : "text-white hover:text-[var(--main-color)]"
-                  }  rounded-full  hover:bg-white p-1`}
+                      ? " hover:bg-[var(--main-color)] hover:text-white text-[var(--main-color)]"
+                      : " hover:bg-white text-white hover:text-[var(--main-color)]"
+                  }  rounded-full  p-1`}
                 />
               </Link>{" "}
             </div>
