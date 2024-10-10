@@ -119,10 +119,10 @@ export default function ClientsComponent() {
             <span className="px-2 pb-10 text-[13px]">
               Arata-ne ce iti doresti sa obtii si noi iti spunem daca se poate
             </span>
-            // <OfferForm
-            //   onSubmit={handleSubmit}
-            //   initialValues={initialFormData}
-            // />
+            <OfferForm
+              onSubmit={handleSubmit}
+              initialValues={initialFormData}
+            />
           </div>
           <div className="relative pl-5 hidden md:block w-1/3  h-2/3">
             <Image
