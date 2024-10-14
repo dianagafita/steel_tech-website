@@ -1,6 +1,8 @@
 import { AiOutlineSolution } from "react-icons/ai";
 import { RiUserSettingsLine } from "react-icons/ri";
 import { IoSettingsOutline } from "react-icons/io5";
+import img from "@/app/[category]/steel.jpg";
+import img2 from "@/app/[category]/3.png";
 
 export const MAIN_MENU = [
   {
@@ -67,5 +69,77 @@ export const MAIN_PAGE_CATEOGORIES = [
       "Proces de taiere termica a materialelor conductive, în special metale, utilizând un jet de plasma fierbinte.",
 
     icon: <IoSettingsOutline size={30} />,
+  },
+];
+
+export const slides1 = [
+  {
+    title: "NUME UTILAJ 1",
+    description: "DESCRIERE",
+    image: img,
+  },
+  {
+    title: "Slide 2 Title",
+    description: "This is the description for slide 2.",
+    image: img,
+  },
+  {
+    title: "Slide 3 Title",
+    description: "This is the description for slide 3.",
+    image: img,
+  },
+];
+
+export const slides2 = [
+  {
+    title: "NUME UTILAJ 1",
+    description: "DESCRIERE",
+    image: img,
+  },
+  {
+    title: "Slide 2 Title",
+    description: "This is the description for slide 2.",
+    image: img,
+  },
+  {
+    title: "Slide 3 Title",
+    description: "This is the description for slide 3.",
+    image: img,
+  },
+];
+
+export const slides3 = [
+  {
+    title: "NUME UTILAJ 1",
+    description: "DESCRIERE",
+    image: img,
+  },
+  {
+    title: "Slide 2 Title",
+    description: "This is the description for slide 2.",
+    image: img,
+  },
+  {
+    title: "Slide 3 Title",
+    description: "This is the description for slide 3.",
+    image: img,
+  },
+];
+
+export const slides4 = [
+  {
+    title: "NUME UTILAJ 1",
+    description: "DESCRIERE",
+    image: img,
+  },
+  {
+    title: "Slide 2 Title",
+    description: "This is the description for slide 2.",
+    image: img,
+  },
+  {
+    title: "Slide 3 Title",
+    description: "This is the description for slide 3.",
+    image: img,
   },
 ];

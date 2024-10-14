@@ -11,6 +11,7 @@ export default function Home() {
     <div className="w-full  z-[20] min-h-[100vh]">
       <div className=" relative h-[100vw] md:h-[50vw] w-full">
         <Image
+          priority
           src={img}
           alt="Background image"
           fill

@@ -7,6 +7,7 @@ export default function AboutPage() {
     <div className="w-full h-full mb-20">
       <div className="relative h-[30vw] w-full text-black">
         <Image
+          priority
           src={img}
           alt="Background image"
           fill

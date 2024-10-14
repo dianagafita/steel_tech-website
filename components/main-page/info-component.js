@@ -44,6 +44,7 @@ export default function InfoComponent() {
         <div className="xl:ml-20 flex p-5 pb-10 relative md:w-1/2 justify-center md:justify-end items-center md:items-start ">
           <div className="mx-2 md:mx-0 relative w-[300px] md:w-full  md:h-[300px]">
             <Image
+              priority
               src={img}
               alt="Steel image 1"
               className="h-full object-contain"
@@ -51,6 +52,7 @@ export default function InfoComponent() {
           </div>
           <div className="md:block hidden mx-2 md:mx-0 md:absolute md:top-40 md:right-40 w-[200px] md:w-[30vw] h-[200px]">
             <Image
+              priority
               src={img}
               alt="Steel image 2"
               className="h-full object-contain"

@@ -25,7 +25,7 @@ export default function MainHeader() {
         <div className="flex items-center  justify-between bg-[rgba(0,0,0,0.9)] text-white w-full">
           <div className="h-[3.5rem] w-full flex items-center justify-between">
             <Link href="/" className="w-[60px] relative self-center">
-              <Image src={logo} alt="Site Logo" />
+              <Image priority src={logo} alt="Site Logo" />
             </Link>
             <ul className="hidden md:flex  items-center  h-full text-[14px]">
               {MAIN_MENU.map((item) => (

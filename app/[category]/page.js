@@ -1,44 +1,37 @@
 "use client";
 import { redirect } from "next/navigation";
-import img from "./steel.jpg";
-import img2 from "./3.png";
 import Image from "next/image";
+import img2 from "./steel.jpg";
+
 import { VideoPlayer } from "@/components/util/video-player";
 import { CarouselMainPage } from "@/components/carousel/carousel-main-page";
 import Products from "@/components/category-page/products";
-import { MAIN_PAGE_CATEOGORIES } from "@/constants";
-import HoverVideo, { Gifs } from "@/components/util/gifs";
-const validCategories = [
-  "frezare-cnc",
-  "sertizare-furtunuri-hidraulice",
-  "debitare-jet-plasma",
-  'debitare-fscicul-laser"',
-];
+import {
+  MAIN_PAGE_CATEOGORIES,
+  slides1,
+  slides2,
+  slides3,
+  slides4,
+} from "@/constants";
+import HoverVideo from "@/components/util/gifs";
 
-const slides = [
-  {
-    title: "NUME UTILAJ 1",
-    description: "DESCRIERE",
-    image: img,
-  },
-  {
-    title: "Slide 2 Title",
-    description: "This is the description for slide 2.",
-    image: img,
-  },
-  {
-    title: "Slide 3 Title",
-    description: "This is the description for slide 3.",
-    image: img,
-  },
+const validCategories = [
+  { title: "frezare-cnc", slides: slides1 },
+  { title: "sertizare-furtunuri-hidraulice", slides: slides2 },
+  { title: "debitare-jet-plasma", slides: slides3 },
+  { title: 'debitare-fscicul-laser"', slides: slides4 },
 ];
 
 export default function CategoryPage({ params }) {
   const { category } = params;
 
-  if (!validCategories.includes(category)) {
+  const isValidCategory = validCategories.some((cat) => cat.title === category);
+  if (!isValidCategory) {
     redirect("/");
   }
+
+  const categoryData = validCategories.find((cat) => cat.title === category);
+  const slides = categoryData ? categoryData.slides : [];
 
   const categoryPage = MAIN_PAGE_CATEOGORIES.find(
     (item) => item.path === `/${category}`
@@ -61,7 +54,6 @@ export default function CategoryPage({ params }) {
             {categoryPage.title}
           </span>
           <span className="text-white text-xl"> </span>
-          {/* <button className="text-end w-[200px] bg-white">ok</button> */}
           <div className="w-full text-end mt-20"></div>
         </div>
       </div>
@@ -78,7 +70,7 @@ export default function CategoryPage({ params }) {
           <h1 className="fontBold text-center"> PASUL 1 </h1>
           <HoverVideo
             videoSrc="https://res.cloudinary.com/defo6qykq/video/upload/v1727165005/steel_tech/IMG_2820_yksuzn.mov"
-            fallbackImage={img.src}
+            fallbackImage={slides.img}
             width="400px"
             height="250px"
           />{" "}
@@ -87,7 +79,7 @@ export default function CategoryPage({ params }) {
           <h1 className="fontBold text-center"> PASUL 2 </h1>
           <HoverVideo
             videoSrc="https://res.cloudinary.com/defo6qykq/video/upload/v1727165005/steel_tech/IMG_2820_yksuzn.mov"
-            fallbackImage={img.src}
+            fallbackImage={slides.img}
             width="400px"
             height="250px"
           />{" "}
@@ -96,7 +88,7 @@ export default function CategoryPage({ params }) {
           <h1 className="fontBold text-center"> PASUL 3 </h1>
           <HoverVideo
             videoSrc="https://res.cloudinary.com/defo6qykq/video/upload/v1727165005/steel_tech/IMG_2820_yksuzn.mov"
-            fallbackImage={img.src}
+            fallbackImage={slides.img}
             width="400px"
             height="250px"
           />{" "}

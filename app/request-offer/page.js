@@ -215,6 +215,7 @@ export default function OfferPage() {
       </div>
       <div className="relative pl-5 hidden md:block w-1/3 h-2/3 py-10 max-h-[500px]">
         <Image
+          priority
           src={img3}
           alt="Steel image 2"
           className="object-cover w-full h-full"
