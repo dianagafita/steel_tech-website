@@ -1,17 +1,21 @@
 import { AiOutlineSolution } from "react-icons/ai";
 import { RiUserSettingsLine } from "react-icons/ri";
 import { IoSettingsOutline } from "react-icons/io5";
-import img from "@/app/[category]/steel.jpg";
-import img2 from "@/app/[category]/3.png";
+import img from "./steel.png";
+import presa from "@/app/assets/photos/sertizare/utilaje/presa.jpeg";
+import masina_taiat from "@/app/assets/photos/sertizare/utilaje/masina_taiat.jpeg";
+import decojit from "@/app/assets/photos/sertizare/utilaje/masina_cojit.jpeg";
+import montat_fitinguri from "@/app/assets/photos/sertizare/utilaje/montaj_fitinguri.jpeg";
+
+import plasma_1 from "@/app/debitare-jet-plasma/1.jpeg";
+import plasma_2 from "@/app/debitare-jet-plasma/2.jpeg";
+import plasma_3 from "@/app/debitare-jet-plasma/3.jpeg";
+import plasma_4 from "@/app/debitare-jet-plasma/4.jpeg";
 
 export const MAIN_MENU = [
   {
     path: "/sertizare-furtunuri-hidraulice",
-    title: "Sertizare",
-  },
-  {
-    path: "/frezare-cnc",
-    title: "Frezare CNC",
+    title: "Furtun hidraulic",
   },
   {
     path: "/debitare-jet-plasma",
@@ -33,7 +37,7 @@ export const MAIN_PAGE_PROP = [
     icon: <RiUserSettingsLine size={30} />,
   },
   {
-    title: "Ceva",
+    title: "Proiectare CAD/CAM",
     icon: <IoSettingsOutline size={30} />,
   },
 ];
@@ -46,14 +50,7 @@ export const MAIN_PAGE_CATEOGORIES = [
       "Capetele furtunurilor hidraulice sunt conectate la fitinguri folosind o presa specializata. Aceasta creeaza o legatura între furtun si fiting, asigurând rezistența la presiuni mari.",
     icon: <AiOutlineSolution size={30} />,
   },
-  {
-    path: "/frezare-cnc",
-    title: "Servicii de frezare CNC",
-    description:
-      "Procesul de prelucrare mecanica a materialelor prin utilizarea masinilor-unelte controlate de un computer, pentru a taia cu precizie piese din metal.",
 
-    icon: <RiUserSettingsLine size={30} />,
-  },
   {
     path: "/debitare-jet-plasma",
     title: "Debitare prin jet de plasma",
@@ -74,37 +71,46 @@ export const MAIN_PAGE_CATEOGORIES = [
 
 export const slides1 = [
   {
-    title: "NUME UTILAJ 1",
-    description: "DESCRIERE",
-    image: img,
+    title: "Presa hidraulica",
+    description: "Va aplica presiune pentru a conecta furtunul la fitinguri.",
+    image: presa,
   },
   {
-    title: "Slide 2 Title",
-    description: "This is the description for slide 2.",
-    image: img,
+    title: "Masina de taiat",
+    description: "Aparat de taiat special pentru a obține o taiere curata",
+    image: masina_taiat,
   },
   {
-    title: "Slide 3 Title",
+    title: "Masina de decojit",
     description: "This is the description for slide 3.",
-    image: img,
+    image: decojit,
+  },
+  {
+    title: "Dispozitiv de montat fitinguri",
+    description:
+      " Acest proces îmbină fizic furtunul cu fitingul, asigurând o etanșare perfectă.Este esențial ca procesul de sertizare să fie realizat uniform pentru a preveni deteriorarea furtunului sau a fitingului.",
+    image: montat_fitinguri,
   },
 ];
 
 export const slides2 = [
   {
-    title: "NUME UTILAJ 1",
-    description: "DESCRIERE",
-    image: img,
+    title: "SAFRATIC HPC 300A",
+    description:
+      "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
+    image: plasma_1,
   },
   {
-    title: "Slide 2 Title",
-    description: "This is the description for slide 2.",
-    image: img,
+    title: "SAFRATIC HPC 300A",
+    description:
+      "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
+    image: plasma_2,
   },
   {
-    title: "Slide 3 Title",
-    description: "This is the description for slide 3.",
-    image: img,
+    title: "SAFRATIC HPC 300A",
+    description:
+      "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
+    image: plasma_3,
   },
 ];
 

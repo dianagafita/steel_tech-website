@@ -30,8 +30,8 @@ export default function AboutPage() {
           În dorința de a ne extinde oferta de servicii și de a răspunde mai
           bine nevoilor clienților, în 2023, am decis să ne diversificăm
           activitățile și să ne orientăm spre domenii complementare. Astfel, am
-          adăugat la portofoliul nostru servicii de frezare CNC și debitare prin
-          jet de plasmă, utilizând echipamente de ultimă generație și tehnologii
+          adăugat la portofoliul nostru servicii de debitare prin jet de plasmă
+          si prin laser, utilizând echipamente de ultimă generație și tehnologii
           avansate.
         </p>
         <p className="mt-4">
