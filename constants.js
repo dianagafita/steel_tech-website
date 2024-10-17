@@ -2,15 +2,18 @@ import { AiOutlineSolution } from "react-icons/ai";
 import { RiUserSettingsLine } from "react-icons/ri";
 import { IoSettingsOutline } from "react-icons/io5";
 import img from "./steel.png";
-import presa from "@/app/assets/photos/sertizare/utilaje/presa.jpeg";
-import masina_taiat from "@/app/assets/photos/sertizare/utilaje/masina_taiat.jpeg";
-import decojit from "@/app/assets/photos/sertizare/utilaje/masina_cojit.jpeg";
-import montat_fitinguri from "@/app/assets/photos/sertizare/utilaje/montaj_fitinguri.jpeg";
+import presa from "@/app/assets/photos/sertizare/utilaje/presa.jpg";
+import masina_taiat from "@/app/assets/photos/sertizare/utilaje/masina_taiat.jpg";
+import decojit from "@/app/assets/photos/sertizare/utilaje/masina_decojit.jpg";
+import montat_fitinguri from "@/app/assets/photos/sertizare/utilaje/montaj_fitinguri.jpg";
 
-import plasma_1 from "@/app/debitare-jet-plasma/1.jpeg";
-import plasma_2 from "@/app/debitare-jet-plasma/2.jpeg";
-import plasma_3 from "@/app/debitare-jet-plasma/3.jpeg";
-import plasma_4 from "@/app/debitare-jet-plasma/4.jpeg";
+import plasma_1 from "@/app/assets/photos/plasma/utilaje/utilaj1.jpg";
+import plasma_2 from "@/app/assets/photos/plasma/utilaje/utilaj2.jpg";
+import plasma_3 from "@/app/assets/photos/plasma/utilaje/utilaj3.jpg";
+import plasma_4 from "@/app/assets/photos/plasma/utilaje/utilaj4.jpg";
+import plasma_5 from "@/app/assets/photos/plasma/utilaje/utilaj5.jpg";
+import plasma_6 from "@/app/assets/photos/plasma/utilaje/utilaj6.jpg";
+import plasma_7 from "@/app/assets/photos/plasma/utilaje/utilaj7.jpg";
 
 export const MAIN_MENU = [
   {
@@ -111,6 +114,30 @@ export const slides2 = [
     description:
       "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
     image: plasma_3,
+  },
+  {
+    title: "SAFRATIC HPC 300A",
+    description:
+      "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
+    image: plasma_4,
+  },
+  {
+    title: "SAFRATIC HPC 300A",
+    description:
+      "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
+    image: plasma_5,
+  },
+  {
+    title: "SAFRATIC HPC 300A",
+    description:
+      "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
+    image: plasma_6,
+  },
+  {
+    title: "SAFRATIC HPC 300A",
+    description:
+      "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
+    image: plasma_7,
   },
 ];
 

@@ -42,14 +42,6 @@ export default function MainFooter({ prefLangCookie }) {
               <FaArrowRightLong className="mr-2 text-[var(--main-color)]" />
               Despre noi
             </Link>
-            <span className="text-[12px] flex items-center">
-              <FaArrowRightLong className="mr-2 text-[var(--main-color)]" />
-              Despre noi
-            </span>{" "}
-            <span className="text-[12px] flex items-center">
-              <FaArrowRightLong className="mr-2 text-[var(--main-color)]" />
-              Despre noi
-            </span>
           </div>
         </div>
         <div className="my-5 h-[400px] w-full">
@@ -57,8 +49,8 @@ export default function MainFooter({ prefLangCookie }) {
         </div>
       </div>
       <div className="border-t py-5 text-center text-[10px]  border-[rgba(96,96,96,0.1)] w-full">
-        <p className=" text-[#757471]">
-          &copy; 2024 Your Company. All rights reserved.
+        <p translate="no" className=" text-[#757471]">
+          &copy; 2024 SteelTech Industry. All rights reserved.
         </p>
       </div>
     </div>

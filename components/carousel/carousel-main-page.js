@@ -11,25 +11,28 @@ export const CarouselMainPage = ({ slides }) => {
   };
 
   return (
-    <div className="relative flex flex-col  md:flex-row w-full max-h-[500px] h-full my-20 mb-40">
-      <div className="h-1/2 md:w-1/2 bg-[var(--main-color)]  flex flex-col  p-5  py-11 md:p-10 ">
-        <h2 className="text-md md:text-2xl font-bold items-start">
+    <div className="relative flex flex-col md:flex-row w-full h-[600px] md:max-h-[500px] md:min-h-[400px] md:h-[500px]  my-20">
+      <div className="h-1/2 w-full md:h-full md:w-1/2 bg-[var(--main-color)]  flex flex-col justify-center p-5 py-10">
+        <h2 className="text-md md:text-xl font-bold">
           {slides[currentSlide].title}
         </h2>
-        <p className="text-[14px] mt-10">{slides[currentSlide].description}</p>
+        <p className="text-[15px] md:text-[16px] mt-4">
+          {slides[currentSlide].description}
+        </p>
       </div>
 
-      <div className="h-1/2 md:w-1/2 relative">
+      <div className="h-1/2 w-full md:h-full md:w-1/2 relative">
         <Image
+          fill
           priority
-          src={slides[currentSlide].image}
+          src={slides[currentSlide].image.src}
           alt={slides[currentSlide].title}
           className="object-cover h-full w-full"
         />
       </div>
       <button
         onClick={handleNext}
-        className="absolute left-1/2 top-2/3 md:top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[var(--main-color)] text-white rounded-full p-4 hover:bg-[var(--main-color)]"
+        className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[var(--main-color)] text-white rounded-full p-4 hover:bg-[var(--main-color)]"
       >
         <MdOutlinePlayCircle size={25} />
       </button>

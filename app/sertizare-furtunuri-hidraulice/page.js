@@ -1,18 +1,19 @@
 "use client";
-import { redirect } from "next/navigation";
 import Image from "next/image";
-import img2 from "./main.jpeg";
+import img2 from "./main.jpg";
 import { CarouselMainPage } from "@/components/carousel/carousel-main-page";
 import Products from "@/components/category-page/products";
-import step1 from "@/app/assets/photos/sertizare/pasi/step1.jpeg";
-import step2 from "@/app/assets/photos/sertizare/pasi/step2.jpeg";
-import step3 from "@/app/assets/photos/sertizare/pasi/step3.jpeg";
-import step4 from "@/app/assets/photos/sertizare/pasi/step4.jpeg";
-import step5 from "@/app/assets/photos/sertizare/pasi/step5.jpeg";
+import step1 from "@/app/assets/photos/sertizare/pasi/step1.jpg";
+import step2 from "@/app/assets/photos/sertizare/pasi/step2.jpg";
+import step3 from "@/app/assets/photos/sertizare/pasi/step3.jpg";
+import step4 from "@/app/assets/photos/sertizare/pasi/step4.jpg";
+import step5 from "@/app/assets/photos/sertizare/pasi/step5.jpg";
 
-import atelier1 from "@/app/assets/photos/sertizare/atelier1.jpeg";
-import atelier2 from "@/app/assets/photos/sertizare/atelier2.jpeg";
-import atelier3 from "@/app/assets/photos/sertizare/atelier3.jpeg";
+import atelier1 from "@/app/assets/photos/sertizare/atelier1.jpg";
+import atelier2 from "@/app/assets/photos/sertizare/atelier2.jpg";
+import atelier3 from "@/app/assets/photos/sertizare/atelier3.jpg";
+import atelier4 from "@/app/assets/photos/sertizare/atelier4.jpg";
+
 import { slides1 } from "@/constants";
 
 const steps = [
@@ -62,8 +63,9 @@ const atelier = [
     imageUrl: atelier2,
     description: "",
   },
+
   {
-    imageUrl: atelier3,
+    imageUrl: atelier4,
     description: "",
   },
 ];

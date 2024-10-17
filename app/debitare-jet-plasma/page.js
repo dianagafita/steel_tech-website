@@ -69,7 +69,7 @@ export default function FurtunHidraulic() {
       </div>
       <div className="p-10 flex w-full justify-between items-center md:mb-10">
         <span className="hidden fontBold text-[15px] md:block">DESCRIERE </span>
-        <span className="text-[15px] md:text-[15px] md:w-1/2 text-center">
+        <span className="text-[15px] md:text-[15px] md:w-2/3  text-justify ">
           Tehnologie de Ultimă Generație pentru Tăierea Materialelor Debitarea
           cu plasmă reprezintă o soluție modernă și eficientă pentru tăierea
           precisă a materialelor metalice, utilizată pe scară largă în diverse
@@ -82,14 +82,14 @@ export default function FurtunHidraulic() {
         CE UTILAJE FOLOSIM?{" "}
       </h1>
       <CarouselMainPage slides={slides2} />
-      <Products services={atelier} text="CE AM MAI CREAT?" />
+      <Products services={atelier} text="CE AM MAI CREAT?" type="plasma" />
 
       <div className="flex flex-wrap  w-[90vw] gap-5  items-center justify-center mx-auto my-10">
         <div className="flex flex-col">
           <h1 className="fontBold text-center"> PASUL 1 </h1>
           <HoverVideo
             videoSrc="https://res.cloudinary.com/defo6qykq/video/upload/v1727165005/steel_tech/IMG_2820_yksuzn.mov"
-            fallbackImage={slides1.img}
+            fallbackImage={img2.src}
             width="400px"
             height="250px"
           />{" "}
@@ -98,7 +98,7 @@ export default function FurtunHidraulic() {
           <h1 className="fontBold text-center"> PASUL 2 </h1>
           <HoverVideo
             videoSrc="https://res.cloudinary.com/defo6qykq/video/upload/v1727165005/steel_tech/IMG_2820_yksuzn.mov"
-            fallbackImage={slides1.img}
+            fallbackImage={img2.src}
             width="400px"
             height="250px"
           />{" "}
@@ -107,7 +107,7 @@ export default function FurtunHidraulic() {
           <h1 className="fontBold text-center"> PASUL 3 </h1>
           <HoverVideo
             videoSrc="https://res.cloudinary.com/defo6qykq/video/upload/v1727165005/steel_tech/IMG_2820_yksuzn.mov"
-            fallbackImage={slides1.img}
+            fallbackImage={img2.src}
             width="400px"
             height="250px"
           />{" "}
