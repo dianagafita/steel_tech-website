@@ -5,7 +5,7 @@ import img from "./3.png";
 export default function AboutPage() {
   return (
     <div className="w-full h-full mb-20">
-      <div className="relative h-[30vw] w-full text-black">
+      <div className="relative h-[40vw] w-full text-black">
         <Image
           priority
           src={img}

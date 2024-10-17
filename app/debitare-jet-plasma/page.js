@@ -48,7 +48,7 @@ const atelier = [
 // ];
 export default function FurtunHidraulic() {
   return (
-    <div className=" w-full  z-[20] min-h-[100vh] ">
+    <div className=" w-full z-[20] h-[100vh] ">
       <div className=" relative h-[100vw] md:h-[40vw] w-full">
         <Image
           src={img2}

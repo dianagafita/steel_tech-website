@@ -7,10 +7,10 @@ export default function CategoriesComponent() {
     <div className="p-5 text-white flex flex-col items-center w-full mb-10">
       <div className="flex flex-col w-full items-center  md:w-1/2 my-10">
         <span className="text-[var(--main-color)] text-[12px] text-center md:whitespace-nowrap">
-          High performance Services for industry and technology
+          Servicii profesionale si de inalta calitate
         </span>
         <span className="text-[var(--second-color)] text-center font-bold text-[16px] mt-3 mb-2">
-          STEELECH has a full range services
+          STEELTECH gama de servicii
         </span>
       </div>
       <ul className="flex flex-col md:flex-row  w-full items-center justify-center ">

@@ -10,16 +10,16 @@ export default function InfoComponent() {
       <div className="flex flex-col md:flex-row justify-between w-full">
         <div className="px-5 pt-5 flex flex-col h-full w-full md:w-1/2 mt-10">
           <span className="text-[var(--main-color)] text-[12px]">
-            High performance Services for industry and technology
+            Servicii de inalta performanta
           </span>
           <span className="text-white font-bold text-[16px] mt-3 mb-2">
-            STEELECH is an industrial operator providing full range services in
-            the sphere of Steel Processing!
+            STEELTECH este un operator industrial care ofera o gama larga de
+            servicii in sfera prelucrarii otelului!
           </span>
           <div className="flex flex-col w-full items-end p-5">
             <span className="flex flex-col text-[#757471] font-100 text-[14px] w-[200px] mb-5">
-              Make your own project come true with our help! Give us your
-              project idea and we will make it happen!
+              Realizeaza-ti propriul proiect cu ajutorul nostru! TRimite-ne
+              ideea ta de proiect si noi o vom realiza!
               <Link
                 href="/request-offer"
                 className="flex justify-between my-5 text-[var(--main-color)] rounded-sm  text-[12px] py-1 hover:text-white active:text-white"
