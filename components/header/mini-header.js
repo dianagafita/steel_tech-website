@@ -3,7 +3,7 @@ import { GoogleTranslate } from "../language-translate/language";
 
 export default function MiniHeader({ prefLangCookie }) {
   return (
-    <div className="bg-[rgb(252,186,3,1)] h-[1.5rem] text-[10px] flex items-center justify-end py-3 ">
+    <div className="bg-[rgb(252,186,3,1)] h-[1.7rem] text-[10px] flex items-center justify-end  ">
       <div></div>
       <div className="mr-5 flex">
         <span translate="no" className="md:mr-5">

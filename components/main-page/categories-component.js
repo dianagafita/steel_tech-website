@@ -28,8 +28,10 @@ export default function CategoriesComponent() {
               >
                 {item.icon}
               </span>
-              <span className="text-[14px] mt-5">{item.title}</span>
-              <span className=" decoration pb-5 pt-2 text-[10px]">
+              <span className="text-[14px] lg:text-[16px] mt-5">
+                {item.title}
+              </span>
+              <span className=" decoration pb-5 pt-2 text-[11px] md:text-[12px] lg:text-[14px]">
                 {item.description}
               </span>{" "}
               <Link

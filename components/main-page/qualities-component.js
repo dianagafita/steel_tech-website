@@ -12,7 +12,7 @@ export default function QualitiesComponent() {
           className="items-center max-w-[400px] max-w-[400px] w-full flex flex-col bg-white text-[rgba(252,186,3)] rounded-lg py-10 px-5 m-5"
         >
           {item.icon}
-          <span className="text-[13px] text-[var(--second-color)]">
+          <span className="text-[13px] text-[var(--second-color)] mt-3">
             {item.title}
           </span>
         </li>

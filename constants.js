@@ -1,6 +1,11 @@
 import { AiOutlineSolution } from "react-icons/ai";
 import { RiUserSettingsLine } from "react-icons/ri";
 import { IoSettingsOutline } from "react-icons/io5";
+import { GiLaserTurret } from "react-icons/gi";
+import { SiEquinixmetal } from "react-icons/si";
+
+import { Shell } from "lucide-react";
+
 import img from "./steel.png";
 import presa from "@/app/assets/photos/sertizare/utilaje/presa.jpg";
 import masina_taiat from "@/app/assets/photos/sertizare/utilaje/masina_taiat.jpg";
@@ -51,24 +56,22 @@ export const MAIN_PAGE_CATEOGORIES = [
     title: "Sertizare furtunuri hidraulice",
     description:
       "Capetele furtunurilor hidraulice sunt conectate la fitinguri folosind o presa specializata. Aceasta creeaza o legatura între furtun si fiting, asigurând rezistența la presiuni mari.",
-    icon: <AiOutlineSolution size={30} />,
+    icon: <Shell size={30} />,
   },
 
   {
     path: "/debitare-jet-plasma",
     title: "Debitare prin jet de plasma",
     description:
-      "Proces de taiere termica a materialelor conductive, în special metale, utilizând un jet de plasma fierbinte.",
-
-    icon: <IoSettingsOutline size={30} />,
+      "Reprezintă o soluție eficientă pentru tăierea precisă a materialelor metalice. Plasma cutting folosește un arc electric generat printr-un jet de gaz comprimat, care topește și taie materialul cu o precizie remarcabilă.",
+    icon: <SiEquinixmetal size={30} />,
   },
   {
     path: "/debitare-fascicul-laser",
     title: "Debitare prin fascicul LASER ",
     description:
-      "Proces de taiere termica a materialelor conductive, în special metale, utilizând un jet de plasma fierbinte.",
-
-    icon: <IoSettingsOutline size={30} />,
+      "Una dintre cele mai avansate metode de prelucrare a materialelor, pentru obținerea unor tăieturi extrem de precise. Folosește un fascicul de lumină concentrat pentru a tăia materiale cu o acuratețe extraordinară.",
+    icon: <GiLaserTurret size={30} />,
   },
 ];
 

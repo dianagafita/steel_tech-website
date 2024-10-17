@@ -18,7 +18,7 @@ export default function InfoComponent() {
           </span>
           <div className="flex flex-col w-full items-end p-5">
             <span className="flex flex-col text-[#757471] font-100 text-[14px] w-[200px] mb-5">
-              Realizeaza-ti propriul proiect cu ajutorul nostru! TRimite-ne
+              Realizeaza-ti propriul proiect cu ajutorul nostru! Trimite-ne
               ideea ta de proiect si noi o vom realiza!
               <Link
                 href="/request-offer"
