@@ -51,7 +51,7 @@ export default function MainHeader() {
         </div>
       </div>
 
-      <MobileHeader openMenu={setOpenMenu} isOpened={openMenu} />
+      <MobileHeader openMenu={handleOpenMenu} isOpened={openMenu} />
     </>
   );
 }

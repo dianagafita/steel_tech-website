@@ -93,7 +93,7 @@ export default function FurtunHidraulic() {
       </div>
       <div className="p-10 my-10 flex w-full justify-between items-center">
         <span className="hidden md:block fontBold text-[15px]">DESCRIERE</span>
-        <span className="text-[15px] w-1/2">
+        <span className="text-[15px] md:text-[15px] md:w-2/3  text-justify ">
           Sertizarea furtunurilor hidraulice este un proces esențial pentru
           asigurarea etanșeității și funcționării corecte a sistemelor
           hidraulice.

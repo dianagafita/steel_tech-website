@@ -4,6 +4,7 @@ import { BiX } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { mobile_variants } from "@/styles/variants";
 import { MAIN_MENU } from "@/constants";
+import Link from "next/link";
 
 // Mobile Header Component
 export default function MobileHeader({ openMenu, isOpened }) {
@@ -16,9 +17,14 @@ export default function MobileHeader({ openMenu, isOpened }) {
     >
       <ul className="flex text-[17px] items-start flex-col text-white justify-start p-4">
         {MAIN_MENU.map((item) => (
-          <li className=" hover:text-[var(--main-color)] m-3" key={item.title}>
-            {item.title}
-          </li>
+          <Link href={item.path} onClick={openMenu}>
+            <li
+              className=" hover:text-[var(--main-color)] m-3"
+              key={item.title}
+            >
+              {item.title}
+            </li>
+          </Link>
         ))}
       </ul>
     </motion.div>
