@@ -102,7 +102,7 @@ export default function ClientsComponent() {
   return (
     <div className="h-full w-full ">
       {/* Background Image */}
-      <div className="relative bg-white h-auto flex flex-col items-center inset-0 min-h-[800px]   w-full">
+      <div className="relative bg-white h-auto flex flex-col items-center inset-0 min-h-[500px]   w-full">
         <Image
           src={img2}
           alt="Background image"

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import img2 from "./steel.jpg";
+import img2 from "./main.png";
 import img from "./w.png";
 import img1 from "./2.jpeg";
 import img4 from "./f.jpeg";
@@ -48,7 +48,7 @@ const atelier = [
 // ];
 export default function FurtunHidraulic() {
   return (
-    <div className=" w-full z-[20] h-[100vh] ">
+    <div className=" w-full  z-[20] min-h-[100vh] ">
       <div className=" relative h-[100vw] md:h-[40vw] w-full">
         <Image
           src={img2}

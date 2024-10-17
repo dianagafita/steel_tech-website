@@ -13,7 +13,7 @@ export default function CategoriesComponent() {
           STEELTECH gama de servicii
         </span>
       </div>
-      <ul className="flex flex-col md:flex-row  w-full items-center justify-center ">
+      <ul className="flex flex-col md:flex-row  w-full items-center">
         {MAIN_PAGE_CATEOGORIES.map((item, index) => (
           <div key={index} className="w-full m-1 max-w-[500px]">
             <div
@@ -21,17 +21,17 @@ export default function CategoriesComponent() {
                 index === 0
                   ? "bg-[var(--main-color)]"
                   : "bg-white text-[var(--second-color)]"
-              } flex max-w-[500px] flex-col justify-between rounded-sm flex flex-col p-5 h-[360px] w-full shadow-[0px_4px_10px_rgba(0,0,0,0.2)]`}
+              } flex max-w-[500px] flex-col justify-between rounded-sm flex flex-col p-5 h-[350px] w-full shadow-[0px_4px_10px_rgba(0,0,0,0.2)]`}
             >
               <span
                 className={`${index !== 0 ? "text-[var(--main-color)]" : ""}`}
               >
                 {item.icon}
               </span>
-              <span className="text-[14px] lg:text-[16px] mt-5">
+              <span className="text-[14px] lg:text-[16px] mt-5 ">
                 {item.title}
               </span>
-              <span className=" decoration pb-5 pt-2 text-[11px] md:text-[12px] lg:text-[14px]">
+              <span className="align-bottom md:h-[150px] decoration pb-5 pt-2 text-[11px] md:text-[12px] lg:text-[14px]">
                 {item.description}
               </span>{" "}
               <Link
