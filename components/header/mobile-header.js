@@ -17,11 +17,8 @@ export default function MobileHeader({ openMenu, isOpened }) {
     >
       <ul className="flex text-[17px] items-start flex-col text-white justify-start p-4">
         {MAIN_MENU.map((item) => (
-          <Link href={item.path} onClick={openMenu}>
-            <li
-              className=" hover:text-[var(--main-color)] m-3"
-              key={item.title}
-            >
+          <Link href={item.path} onClick={openMenu} key={item.title}>
+            <li className=" hover:text-[var(--main-color)] m-3">
               {item.title}
             </li>
           </Link>
