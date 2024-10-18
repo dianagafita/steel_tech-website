@@ -29,10 +29,10 @@ export const MAIN_MENU = [
     path: "/debitare-jet-plasma",
     title: "Debitare plasma",
   },
-  {
-    path: "/debitare-fascicul-laser",
-    title: "Debitare laser",
-  },
+  // {
+  //   path: "/",
+  //   title: "Debitare laser",
+  // },
 ];
 
 export const MAIN_PAGE_PROP = [
@@ -67,7 +67,7 @@ export const MAIN_PAGE_CATEOGORIES = [
     icon: <SiEquinixmetal size={30} />,
   },
   {
-    path: "/debitare-fascicul-laser",
+    path: "",
     title: "Debitare prin fascicul LASER ",
     description:
       "Una dintre cele mai avansate metode de prelucrare a materialelor, pentru obținerea unor tăieturi extrem de precise. Folosește un fascicul de lumină concentrat pentru a tăia materiale cu o acuratețe extraordinară.",

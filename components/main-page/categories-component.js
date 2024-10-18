@@ -21,7 +21,7 @@ export default function CategoriesComponent() {
                 index === 0
                   ? "bg-[var(--main-color)]"
                   : "bg-white text-[var(--second-color)]"
-              } flex max-w-[500px] flex-col justify-between rounded-sm flex flex-col p-5 h-[350px] w-full shadow-[0px_4px_10px_rgba(0,0,0,0.2)]`}
+              } flex max-w-[500px] flex-col justify-between rounded-sm flex flex-col p-5 h-[370px] w-full shadow-[0px_4px_10px_rgba(0,0,0,0.2)]`}
             >
               <span
                 className={`${index !== 0 ? "text-[var(--main-color)]" : ""}`}

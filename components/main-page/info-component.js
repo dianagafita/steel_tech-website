@@ -1,5 +1,7 @@
 import Image from "next/image";
-import img from "@/app/1.png";
+import img from "./q.jpg";
+import img1 from "./main.jpg";
+
 import { FaArrowRightLong } from "react-icons/fa6";
 import QualitiesComponent from "./qualities-component";
 import Link from "next/link";
@@ -53,7 +55,7 @@ export default function InfoComponent() {
           <div className="md:block hidden mx-2 md:mx-0 md:absolute md:top-40 md:right-40 w-[200px] md:w-[30vw] h-[200px]">
             <Image
               priority
-              src={img}
+              src={img1}
               alt="Steel image 2"
               className="h-full object-contain"
             />

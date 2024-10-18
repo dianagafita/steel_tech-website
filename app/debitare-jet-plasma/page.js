@@ -84,7 +84,7 @@ export default function FurtunHidraulic() {
       <CarouselMainPage slides={slides2} />
       <Products services={atelier} text="CE AM MAI CREAT?" type="plasma" />
 
-      <div className="flex flex-wrap  w-[90vw] gap-5  items-center justify-center mx-auto my-10">
+      {/* <div className="flex flex-wrap  w-[90vw] gap-5  items-center justify-center mx-auto my-10">
         <div className="flex flex-col">
           <h1 className="fontBold text-center"> PASUL 1 </h1>
           <HoverVideo
@@ -112,13 +112,13 @@ export default function FurtunHidraulic() {
             height="250px"
           />{" "}
         </div>
-      </div>
-      <div className="flex flex-col w-full items-center">
+      </div> */}
+      {/* <div className="flex flex-col w-full items-center">
         <h1 className="fontBold text-center text-[17px] md:text-[20px]">
           CUM FUNCTIONEAZA?{" "}
         </h1>
         <VideoPlayer videoId="E5w--KIy-nQ" />
-      </div>
+      </div> */}
     </div>
   );
 }
