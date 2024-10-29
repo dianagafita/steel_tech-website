@@ -132,7 +132,7 @@ export default function ClientsComponent() {
             />
             {/* Phone Number Section */}
             <div className="absolute bottom-0 md:bottom-[-1rem] flex text-[10px] lg:text-[13px]  items-center   right-0 bg-[var(--main-color)] p-2 px-3">
-              <MdPhone className="mr-2" /> 074-999-444
+              <MdPhone className="mr-2" /> 072-824-0023
             </div>
           </div>
         </div>
