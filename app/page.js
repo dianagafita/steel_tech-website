@@ -53,14 +53,8 @@ export default function Home() {
       <CategoriesComponent />
       <div className="border-t py-2 flex items-center justify-start md:justify-center space-x-5 text-[14px] w-[100vw] overflow-x-auto">
         {FIRME.map((firma, index) => (
-          <div className="flex items-center mx-">
-            <Image
-              key={index}
-              src={firma.image}
-              alt=""
-              width={100}
-              height={100}
-            />
+          <div key={index} className="flex items-center mx-">
+            <Image src={firma.image} alt="" width={100} height={100} />
           </div>
         ))}
 
