@@ -5,6 +5,7 @@ import InfoComponent from "@/components/main-page/info-component";
 import QualitiesComponent from "@/components/main-page/qualities-component";
 import CategoriesComponent from "@/components/main-page/categories-component";
 import ClientsComponent from "@/components/main-page/clients-component";
+import { FIRME } from "@/constants";
 
 export default function Home() {
   return (
@@ -50,8 +51,20 @@ export default function Home() {
       <InfoComponent />
 
       <CategoriesComponent />
-      <div className="border-t py-5 flex items-center justify-start md:justify-center space-x-5 text-[14px] w-[100vw] overflow-x-auto">
-        <span className="flex items-center mx-5">
+      <div className="border-t py-2 flex items-center justify-start md:justify-center space-x-5 text-[14px] w-[100vw] overflow-x-auto">
+        {FIRME.map((firma, index) => (
+          <div className="flex items-center mx-">
+            <Image
+              key={index}
+              src={firma.image}
+              alt=""
+              width={100}
+              height={100}
+            />
+          </div>
+        ))}
+
+        {/* <span className="flex items-center mx-5">
           <FaFacebook className="mr-2" />
           Facebook
         </span>
@@ -66,11 +79,11 @@ export default function Home() {
         <span className="flex items-center mx-5">
           <FaFacebook className="mr-2" />
           Facebook
-        </span>
+        </span> */}
       </div>
 
       <ClientsComponent />
-      <div className="bg-white md:h-[500px]"></div>
+      <div className="bg-white h-[200px] md:h-[500px]"></div>
     </div>
   );
 }

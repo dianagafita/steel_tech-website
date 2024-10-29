@@ -3,8 +3,12 @@ import Image from "next/image";
 import img2 from "./main.png";
 import img from "./w.png";
 import img1 from "./2.jpeg";
-import img4 from "./f.jpeg";
+import img4 from "./albastru.jpeg";
 import img3 from "./a.jpeg";
+import gratar from "./cupt.jpeg";
+import grilaj from "./gril.jpeg";
+import ex1 from "./roata.jpeg";
+import ex2 from "./roatasi.jpeg";
 
 import { VideoPlayer } from "@/components/util/video-player";
 import { CarouselMainPage } from "@/components/carousel/carousel-main-page";
@@ -20,7 +24,19 @@ import HoverVideo from "@/components/util/gifs";
 
 const atelier = [
   {
-    imageUrl: img,
+    imageUrl: gratar,
+    description: "",
+  },
+  // {
+  //   imageUrl: grilaj,
+  //   description: "",
+  // },
+  {
+    imageUrl: ex1,
+    description: "",
+  },
+  {
+    imageUrl: ex2,
     description: "",
   },
   {

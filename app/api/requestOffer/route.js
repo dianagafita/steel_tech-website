@@ -29,9 +29,9 @@ export async function POST(req) {
       fileBuffer = Buffer.from(await offer.file.arrayBuffer());
     }
 
-    await resend.emails.send({
-      from: "SteelTech <florariahellen@hellenproparty.ro>",
-      to: ["gafita.diana12@gmail.com"],
+    const response = await resend.emails.send({
+      from: offer.email,
+      to: "office@steeltech.store",
       subject: "CERERE OFERTA",
       html: `<h1>OFERTA </h1>
              <p><strong>NUME COMPLET:</strong> ${offer.fullName}</p>
@@ -54,6 +54,7 @@ export async function POST(req) {
           ]
         : [], // No attachment if no file
     });
+    console.log("User email response:", response);
 
     return NextResponse.json(
       { message: "Email sent successfully!" },

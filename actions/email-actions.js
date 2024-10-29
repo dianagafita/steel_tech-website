@@ -28,7 +28,7 @@ export const resetPassword = async (email) => {
   });
   const resend = new Resend(process.env.RESEND_API_KEY);
   const { data } = await resend.emails.send({
-    from: "Floraria Hellen  <florariahellen@hellenproparty.ro>",
+    from: "  <florariahellen@hellenproparty.ro>",
     to: [email],
     subject: "Resetare parola",
     react: ResetPasswordTemplate({ email: email, resetPasswordToken }),

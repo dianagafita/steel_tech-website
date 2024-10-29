@@ -20,6 +20,13 @@ import plasma_5 from "@/app/assets/photos/plasma/utilaje/utilaj5.jpg";
 import plasma_6 from "@/app/assets/photos/plasma/utilaje/utilaj6.jpg";
 import plasma_7 from "@/app/assets/photos/plasma/utilaje/utilaj7.jpg";
 
+import firma1 from "@/app/assets/photos/firms-logo/hypertherm.jpeg";
+import firma2 from "@/app/assets/photos/firms-logo/garant.jpeg";
+import firma3 from "@/app/assets/photos/firms-logo/manuli.jpeg";
+import firma4 from "@/app/assets/photos/firms-logo/dormero.jpeg";
+import firma5 from "@/app/assets/photos/firms-logo/holexok.jpeg";
+import firma6 from "@/app/assets/photos/firms-logo/sc.jpeg";
+
 export const MAIN_MENU = [
   {
     path: "/sertizare-furtunuri-hidraulice",
@@ -101,43 +108,43 @@ export const slides1 = [
 
 export const slides2 = [
   {
-    title: "SAFRATIC HPC 300A",
+    title: "SAFMATIC HPC 300A",
     description:
       "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
     image: plasma_1,
   },
   {
-    title: "SAFRATIC HPC 300A",
+    title: "SAFMATIC HPC 300A",
     description:
       "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
     image: plasma_2,
   },
   {
-    title: "SAFRATIC HPC 300A",
+    title: "SAFMATIC HPC 300A",
     description:
       "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
     image: plasma_3,
   },
   {
-    title: "SAFRATIC HPC 300A",
+    title: "SAFMATIC HPC 300A",
     description:
       "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
     image: plasma_4,
   },
   {
-    title: "SAFRATIC HPC 300A",
+    title: "SAFMATIC HPC 300A",
     description:
       "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
     image: plasma_5,
   },
   {
-    title: "SAFRATIC HPC 300A",
+    title: "SAFMATIC HPC 300A",
     description:
       "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
     image: plasma_6,
   },
   {
-    title: "SAFRATIC HPC 300A",
+    title: "SAFMATIC HPC 300A",
     description:
       "Grosimi pana la 30mm. Mașinile noastre de debitare cu plasmă utilizează tehnologie de ultimă generație pentru a garanta rezultate de înaltă calitate. Prin intermediul unui jet de mare viteza de gaz ionizat, plasma creează o temperatură extrem de ridicată (peste 20.000°C), suficientă pentru a topi metalul și a-l separa curat, fără a lăsa margini aspre sau imperfecțiuni.",
     image: plasma_7,
@@ -177,5 +184,27 @@ export const slides4 = [
     title: "Slide 3 Title",
     description: "This is the description for slide 3.",
     image: img,
+  },
+];
+
+export const FIRME = [
+  {
+    image: firma1.src,
+  },
+  {
+    image: firma2,
+  },
+  {
+    image: firma3,
+  },
+  {
+    image: firma4,
+  },
+
+  {
+    image: firma5,
+  },
+  {
+    image: firma6,
   },
 ];
