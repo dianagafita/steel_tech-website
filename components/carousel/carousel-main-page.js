@@ -32,9 +32,13 @@ export const CarouselMainPage = ({ slides }) => {
       </div>
       <button
         onClick={handleNext}
-        className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[var(--main-color)] text-white rounded-full p-4 hover:bg-[var(--main-color)]"
+        className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[var(--main-color)] text-white rounded-full p-4 "
       >
-        <MdOutlinePlayCircle size={25} />
+        <MdOutlinePlayCircle
+          size={25}
+          style={{ color: "hover:var(second-color) active:var(second-color)" }}
+          className="hover:text-black"
+        />
       </button>
     </div>
   );
