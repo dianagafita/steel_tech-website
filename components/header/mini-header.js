@@ -7,9 +7,9 @@ export default function MiniHeader({ prefLangCookie }) {
       <div></div>
       <div className="mr-5 flex">
         <span translate="no" className="md:mr-5">
-          steeltech@gmail.com
+          office@steeltech.store
         </span>
-        <span className="hidden md:block">073 - 456 - 989</span>
+        <span className="hidden md:block">072 - 824 - 0023</span>
       </div>
       <div className="hidden md:block">
         <GoogleTranslate prefLangCookie={prefLangCookie} />

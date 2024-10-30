@@ -178,7 +178,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import img3 from "./2.png";
+import img3 from "./formimg.jpeg";
 import OfferForm from "@/components/email/offer-form";
 
 export default function OfferPage() {
@@ -213,12 +213,12 @@ export default function OfferPage() {
         </span>
         <OfferForm onSubmit={handleSubmit} initialValues={initialFormData} />
       </div>
-      <div className="relative pl-5 hidden md:block w-1/3 h-2/3 py-10 max-h-[500px]">
+      <div className="relative pl-5 hidden md:block w-1/3 self-start -[500px]">
         <Image
           priority
           src={img3}
           alt="Steel image 2"
-          className="object-cover w-full h-full"
+          className="object-contain w-full h-full"
         />
       </div>
     </div>

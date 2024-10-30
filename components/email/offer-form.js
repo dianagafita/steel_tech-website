@@ -92,6 +92,7 @@ const OfferForm = ({ onSubmit, initialValues }) => {
           required
           name="requestOfferEmail"
           label="Email"
+          pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
           value={formData.requestOfferEmail}
           onChange={handleInputChange}
         />

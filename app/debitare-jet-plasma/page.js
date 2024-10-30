@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
-import img2 from "./main.png";
+import img2 from "./mainmain.png";
 import img from "./w.png";
 import img1 from "./2.jpeg";
-import img4 from "./albastru.jpeg";
-import img3 from "./a.jpeg";
-import gratar from "./cupt.jpeg";
-import grilaj from "./gril.jpeg";
-import ex1 from "./roata.jpeg";
-import ex2 from "./roatasi.jpeg";
+import img4 from "./albst.jpeg";
+import img3 from "./w.jpeg";
+import gratar from "./cpt.jpeg";
+import past from "./past.jpeg";
+import ex1 from "./ex11.jpeg";
+import ex2 from "./ex22.jpeg";
 
 import { VideoPlayer } from "@/components/util/video-player";
 import { CarouselMainPage } from "@/components/carousel/carousel-main-page";
@@ -27,10 +27,10 @@ const atelier = [
     imageUrl: gratar,
     description: "",
   },
-  // {
-  //   imageUrl: grilaj,
-  //   description: "",
-  // },
+  {
+    imageUrl: past,
+    description: "",
+  },
   {
     imageUrl: ex1,
     description: "",
@@ -65,7 +65,7 @@ const atelier = [
 export default function FurtunHidraulic() {
   return (
     <div className=" w-full  z-[20] min-h-[100vh] ">
-      <div className=" relative h-[100vw] md:h-[40vw] w-full">
+      <div className=" relative h-[50vh] md:h-[40vw] w-full">
         <Image
           src={img2}
           priority

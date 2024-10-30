@@ -73,7 +73,7 @@ const atelier = [
 export default function FurtunHidraulic() {
   return (
     <div className=" w-full  z-[20] min-h-[100vh] mb-20">
-      <div className=" relative h-[100vw] md:h-[50vw] w-full">
+      <div className=" relative h-[50vh] md:h-[50vw] w-full">
         <Image
           src={img2}
           priority

@@ -17,7 +17,7 @@ export default function MainFooter({ prefLangCookie }) {
               Daca aveti intrebari nu ezitati sa ne contactati.
             </span>
             <span className="flex text-[15px] items-center font-bold text-[var(--main-color)]">
-              <MdPhone className="mr-3 my-2 whitespace-nowrap" /> 076-888-989
+              <MdPhone className="mr-3 my-2 whitespace-nowrap" /> 072-824-0023
             </span>
 
             <Link

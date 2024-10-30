@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "./1.png";
+import img from "./b .png";
 import { FaFacebook } from "react-icons/fa6";
 import InfoComponent from "@/components/main-page/info-component";
 import QualitiesComponent from "@/components/main-page/qualities-component";
@@ -53,7 +53,7 @@ export default function Home() {
       <CategoriesComponent />
       <div className="border-t py-2 flex items-center justify-start md:justify-center space-x-5 text-[14px] w-[100vw] overflow-x-auto">
         {FIRME.map((firma, index) => (
-          <div key={index} className="flex items-center mx-">
+          <div key={index} className="flex items-center pr-3">
             <Image src={firma.image} alt="" width={100} height={100} />
           </div>
         ))}

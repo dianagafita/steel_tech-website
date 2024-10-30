@@ -10,11 +10,11 @@ const Products = ({ services, text, type }) => {
           <h1 className="fontBold text-center text-[17px] md:text-[20px] mb-5 md:mb-10">
             {text}
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  md:gap-5">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group w-full h-60   lg:h-80 lg:w-80 [perspective:1000px] mb-10"
+                className="group w-full h-60 px-10  lg:h-80 lg:w-80 [perspective:1000px] mb-10"
               >
                 {(type !== "noname" || type !== "plasma") && (
                   <h1 className="fontBold text-center py-5 whitespace-nowrap">
