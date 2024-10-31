@@ -29,7 +29,7 @@ export default function Home() {
             translate="no"
             className="text-[var(--main-color)] text-3xl font-bold"
           >
-            STEEL TECH INDUSTRY
+            STEELTECH INDUSTRY
           </span>
           <span translate="no" className="text-white text-xl">
             YES, WE CAN
