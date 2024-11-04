@@ -6,18 +6,18 @@ const Products = ({ services, text, type }) => {
   return (
     <section className="mx-auto my-20">
       <div className="mx-auto px-4 py-10  lg:max-w-7xl">
-        <div className="flex flex-col items-center  ">
+        <div className="flex flex-col md:items-center  ">
           <h1 className="fontBold text-center text-[17px] md:text-[20px] mb-5 md:mb-10">
             {text}
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  md:gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-x-4 gap-y-10 md:gap-">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group w-full h-60 px-10  lg:h-80 lg:w-80 [perspective:1000px] mb-10"
+                className="group w-full h-72 md:h-80 md:w-80 px-10  [perspective:1000px] mb-10"
               >
                 {(type !== "noname" || type !== "plasma") && (
-                  <h1 className="fontBold text-center py-5 whitespace-nowrap">
+                  <h1 className="fontBold text-center py-5 md:whitespace-nowrap">
                     {service.name}
                   </h1>
                 )}

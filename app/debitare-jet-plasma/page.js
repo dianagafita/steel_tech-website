@@ -2,7 +2,6 @@
 import Image from "next/image";
 import img2 from "./mainmain.png";
 import img from "./w.png";
-import img1 from "./2.jpeg";
 import img4 from "./albst.jpeg";
 import img3 from "./w.jpeg";
 import gratar from "./cpt.jpeg";
@@ -104,13 +103,14 @@ export default function FurtunHidraulic() {
         <div className="flex flex-col">
           <h1 className="fontBold text-center"> PASUL 1 </h1>
           <HoverVideo
-            videoSrc="https://res.cloudinary.com/defo6qykq/video/upload/v1727165005/steel_tech/IMG_2820_yksuzn.mov"
+            videoSrc={img1}
             fallbackImage={img2.src}
             width="400px"
             height="250px"
           />{" "}
         </div>
-        <div className="flex flex-col">
+      </div> */}
+      {/*  <div className="flex flex-col">
           <h1 className="fontBold text-center"> PASUL 2 </h1>
           <HoverVideo
             videoSrc="https://res.cloudinary.com/defo6qykq/video/upload/v1727165005/steel_tech/IMG_2820_yksuzn.mov"

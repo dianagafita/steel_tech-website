@@ -19,21 +19,21 @@ import { slides1 } from "@/constants";
 const steps = [
   {
     step: "01",
-    name: " Pregatirea Materialelor",
+    name: " Pregatire Materiale",
     imageUrl: step1,
     description:
       "Furtunuri Hidraulice: Fabricate din cauciuc flexibil sau compus sintetic, rezistente la presiune, armaturi: Conectori metalici adaptați la dimensiunea furtunului, presă hidraulică. ",
   },
   {
     step: "02",
-    name: "Pregatirea Furtunului",
+    name: "Pregatire Furtun",
     imageUrl: step2,
     description:
       "Se taie furtunul la lungimea dorită, folosind un aparat de taiat special pentru a obține o taiere curata.Se îndepărtează straturile exterioare ale furtunului (dacă este cazul) pentru a permite inserția fitingului. ",
   },
   {
     step: "03",
-    name: "Montarea Fitingului",
+    name: "Montare Fiting",
     imageUrl: step3,
     description:
       "Fitingul este introdus în capătul furtunului, ajungând până la marcajul de inserție (dacă există).Este important ca fitingul să fie introdus corect pentru a asigura o etanșare eficientă.",
@@ -47,7 +47,7 @@ const steps = [
   },
   {
     step: "03",
-    name: "Verificarea Finala",
+    name: "Verificare Finala",
     imageUrl: step5,
     description:
       "După sertizare, se verifică conexiunea pentru a se asigura că este etanșă și rezistentă. Este recomandat să se realizeze o masuratoare cu ajutorul unui şubler, pentru a verifica cota reala de sertizare.",
