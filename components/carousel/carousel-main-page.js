@@ -16,9 +16,17 @@ export const CarouselMainPage = ({ slides }) => {
         <h2 className="text-md md:text-xl font-bold">
           {slides[currentSlide].title}
         </h2>
-        <p className="text-[15px] md:text-[16px] mt-4">
-          {slides[currentSlide].description}
-        </p>
+        {slides[currentSlide].description ? (
+          <p className="text-[15px] md:text-[16px] mt-4">
+            {slides[currentSlide].description}
+          </p>
+        ) : (
+          <ol className="mt-10 list-disc list-inside">
+            {slides[currentSlide].text.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ol>
+        )}
       </div>
 
       <div className="h-1/2 w-full md:h-full md:w-1/2 relative">

@@ -20,6 +20,11 @@ import plasma_5 from "@/app/assets/photos/plasma/utilaje/utilaj5.jpg";
 import plasma_6 from "@/app/assets/photos/plasma/utilaje/utilaj6.jpg";
 import plasma_7 from "@/app/assets/photos/plasma/utilaje/utilaj7.jpg";
 
+import laser1 from "./app/assets/photos/laser/utilaje/laser1.jpg";
+import laser2 from "./app/assets/photos/laser/utilaje/laser2.jpg";
+import laser3 from "./app/assets/photos/laser/utilaje/laser3.jpg";
+import laser4 from "./app/assets/photos/laser/utilaje/laser5.jpg";
+
 import firma1 from "@/app/assets/photos/firms-logo/hypertherm.jpeg";
 import firma2 from "@/app/assets/photos/firms-logo/garant.jpeg";
 import firma3 from "@/app/assets/photos/firms-logo/manuli.jpeg";
@@ -36,10 +41,10 @@ export const MAIN_MENU = [
     path: "/debitare-jet-plasma",
     title: "Debitare plasma",
   },
-  // {
-  //   path: "/",
-  //   title: "Debitare laser",
-  // },
+  {
+    path: "/debitare-laser",
+    title: "Debitare laser",
+  },
 ];
 
 export const MAIN_PAGE_PROP = [
@@ -74,7 +79,7 @@ export const MAIN_PAGE_CATEOGORIES = [
     icon: <SiEquinixmetal size={30} />,
   },
   {
-    path: "",
+    path: "/debitare-laser",
     title: "Debitare prin fascicul LASER ",
     description:
       "Una dintre cele mai avansate metode de prelucrare a materialelor, pentru obținerea unor tăieturi extrem de precise. Folosește un fascicul de lumină concentrat pentru a tăia materiale cu o acuratețe extraordinară.",
@@ -153,19 +158,47 @@ export const slides2 = [
 
 export const slides3 = [
   {
-    title: "NUME UTILAJ 1",
-    description: "DESCRIERE",
-    image: img,
+    title:
+      "LASER FIBER HS G4020H - Tehnologie Avansata pentru Taiere de Precizie",
+
+    text: [
+      "Reglaj automat al axei Z pentru adaptare la denivelări",
+      "Senzor de urmărire a materialului și obiectelor de pe masa de lucru",
+      "Viteză maximă pentru tăierea tablei ondulate",
+      "Stabilizator de tensiune 80KVA pentru întregul echipament",
+    ],
+    image: laser1,
   },
   {
-    title: "Slide 2 Title",
-    description: "This is the description for slide 2.",
-    image: img,
+    title: "LASER FIBER HS G4020H - Sistem de Control Inteligent si Siguranta",
+    text: [
+      "Chiller cu funcții de încălzire/răcire în circuit închis",
+      "Computer industrial cu unitate de control separată + telecomandă wireless",
+      "Software de grafică inclus, opțional controller Beckoff",
+      "Sistem anticoleziune și traiectorie optimizată de tăiere",
+    ],
+    image: laser2,
   },
   {
-    title: "Slide 3 Title",
-    description: "This is the description for slide 3.",
-    image: img,
+    title:
+      "LASER FIBER HS G4020H - Performanta si Precizie la Cel Mai Inalt Nivel",
+    text: [
+      "Motoare servo de ultimă generație: Alpha Wittenstein, Gudel, Sanyo Denky",
+      "Electronică de înaltă calitate: Schneider (Germania), Omron (Japonia)",
+      "Cap laser Precitec (Germania) pentru tăiere precisă",
+      "Batiu sudat robotic, tratat termic și garantat 20 de ani împotriva deformării",
+    ],
+    image: laser3,
+  },
+  {
+    title: "LASER FIBER HS G4020H - Functionalitate si Eficienta Energetica",
+    text: [
+      "Flux optimizat de aer și sistem de filtrare a gazelor",
+      "Sursă laser modulară IPG (4Kw-13Kw) cu aer condiționat integrat",
+      "Monitorizare în timp real cu cameră video și sistem de mentenanță online",
+      "Masa dublă interschimbabilă în 8 secunde pentru productivitate maximă",
+    ],
+    image: laser4,
   },
 ];
 
